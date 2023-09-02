@@ -36,7 +36,7 @@ a{
 /* Start Hero */
 .hero{
     position: relative;
-    height: 600px;
+    height: 700px;
 }
 
 .search{
@@ -63,6 +63,10 @@ a{
     width: 90%;
 }
 
+#search iconify-icon{
+    font-size: 20px;
+}
+
 .overlay{
     position: absolute;
     width: 100%;
@@ -85,11 +89,28 @@ a{
     z-index: -2;
 }
 
+@media (max-width: 768px){
+    .image{
+        background-size: cover;
+    }
+}
+
 .hero .navbar-nav{
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
+
+.hero .navbar-toggler{
+    background: var(--primary);
+}
+
+@media (max-width: 992px){
+    .hero .navbar-collapse{
+        text-align: center;
+    }
+}
+
 
 .hero nav{
     display: flex;
@@ -111,6 +132,7 @@ a{
     width: 0;
     height: 2px;
     bottom: 0;
+    left: 0;
     background-color: var(--primary);
 }
 
@@ -123,32 +145,38 @@ a{
 }
 
 
-.hero h3{
-    position: absolute;
-    bottom: 10%;
-    font-size: 50px;
-    color: var(--secondary);
-    width: 700px;
+
+.slogan{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.cta{
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
+.hero h3{
+    font-size: 40px;
+    color: var(--secondary);
 }
+
+@media(min-width: 992px){
+    .cta{
+        text-align: right;
+    }
+}
+
 
 .hero .get-started{
     position: relative;
-    bottom: 10%;
-    right: 10%;
     font-size: 50px;
     color: var(--secondary);
+    text-transform: uppercase;
 }
 
 .hero .get-started::after{
     position: absolute;
     content: "";
-    width: 0;
+    width: 30%;
     height: 50%;
     background-color: var(--primary);
     bottom: 0;
