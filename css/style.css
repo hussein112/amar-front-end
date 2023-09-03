@@ -24,6 +24,21 @@
     background-color: var(--secondary) !important;
     outline: var(--secondary) !important;
     color: var(--primary)!important;
+    border-color: transparent !important;
+}
+
+.btn-secondary{
+    background-color: var(--tertiary);
+    border-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus{
+    background-color: var(--primary) !important;
+    outline: var(--primary) !important;
+    color: var(--secondary)!important;
+    border-color: transparent !important;
 }
 
 
@@ -31,6 +46,17 @@ a{
     text-decoration: none;
 }
 
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media (max-width: 768px){
+    .collection{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+}
 /* End Framework */
 
 /* Start Hero */
@@ -250,17 +276,6 @@ a{
     background-color: var(--primary);
 }
 
-.services-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-}
-
-@media (max-width: 768px){
-    .services-container{
-        grid-template-columns: minmax(100px, 1fr);
-    }
-}
-
 .services-container .card{
     margin: 10px;
     background: transparent;
@@ -275,3 +290,75 @@ a{
 }
 
 /* End Services */
+
+
+/* Register */
+
+.register{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.register iconify-icon{
+    font-size: 100px;
+}
+
+@media(max-width: 576px){
+    .register .btns{
+        flex-wrap: wrap;
+    }
+    .register .btns a{
+        margin-top: 2px;
+    }
+}
+
+/* Register */
+
+
+/* Start Footer */
+
+footer{
+    background-color: var(--primary);
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer .list{
+    display: flex;
+    flex-direction: column;   
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    footer .list{
+        text-align: center;
+    }
+
+    footer a{
+        width: 100% !important;
+    }
+}
+
+footer a,
+footer p{
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+footer a{
+    width: fit-content;
+}
+
+
+footer iconify-icon{
+    font-size: 50px;
+    transition: var(--transition);
+}
+
+footer iconify-icon:hover{
+    color: var(--tertiary);
+}
+
+
+/* End Footer */
