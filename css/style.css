@@ -121,18 +121,18 @@ a{
     }
 }
 
-.hero .navbar-nav{
+.navbar .navbar-nav{
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
-.hero .navbar-toggler{
+.navbar .navbar-toggler{
     background: var(--primary);
 }
 
 @media (max-width: 992px){
-    .hero .navbar-collapse{
+    .navbar .navbar-collapse{
         text-align: center;
     }
 }
@@ -145,13 +145,13 @@ a{
     flex-wrap: wrap;
 }
 
-.hero nav .nav-item{
+.navbar .nav-item{
     padding: 15px 0;
     position: relative;
     text-transform: uppercase;
 }
 
-.hero nav .nav-item::before{
+.navbar .nav-item::before{
     position: absolute;
     content: "";
     transition: var(--transition);
@@ -162,11 +162,11 @@ a{
     background-color: var(--primary);
 }
 
-.hero nav .nav-item:hover:before{
+.navbar .nav-item:hover:before{
     width: 100%;
 }
 
-.hero .nav-link{
+.navbar .nav-link{
     color: var(--secondary);
 }
 
@@ -362,3 +362,63 @@ footer iconify-icon:hover{
 
 
 /* End Footer */
+
+
+/** Start Register Page **/
+.register-bg{
+    background-image: url(../assets/register.jpg);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth-bg h1{
+    color: var(--primary);
+    text-align: center;
+}
+
+.auth-form{
+    text-align: center;
+}
+
+.auth-form .btns{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.auth-form .btns a{
+    width: fit-content;
+}
+
+.auth-form .btns button{
+    width: fit-content;
+}
+
+
+.auth-bg .google-sign-in{
+    border: 1px solid var(--primary);
+    width: fit-content;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.auth-bg .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/** End Register Page **/
+
+
+/** Start Login Page **/
+.login-bg{
+    background-image: url(../assets/login.jpg);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/** End Login Page **/
