@@ -7,3 +7,10 @@ document.getElementById("search").addEventListener("click", () => {
 document.getElementById("close").addEventListener("click", () => {
     searchBox.style.display = 'none';
 });
+
+
+// New Profile Picture Button
+
+document.getElementById("new-profile").addEventListener("click", () => {
+    document.getElementById("new-profile-file").click();
+});
