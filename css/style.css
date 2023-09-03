@@ -57,6 +57,22 @@ a{
         grid-template-columns: minmax(100px, 1fr);
     }
 }
+
+.title{
+    position: relative;
+    width: fit-content;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-color: var(--primary);
+    z-index: -1;
+}
 /* End Framework */
 
 /* Start Hero */
@@ -422,3 +438,11 @@ footer iconify-icon:hover{
 }
 
 /** End Login Page **/
+
+
+/** Start About us Page **/
+.navbar-container{
+    background-color: var(--tertiary);
+}
+
+/** End About Us Page **/
