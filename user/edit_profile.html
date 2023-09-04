@@ -56,10 +56,31 @@
     </div>
     
     <div class="container">
-        <h2>New Post</h2>
-        <form method="post" action="">
-            
-        </form>
+        <h2>Edit Profile</h2>
+        <div class="profile">
+            <form method="post" action="">
+                <div class="d-flex align-items-start justify-content-between">
+                    <div class="picture">
+                        <img src="https://picsum.photos/200/300">
+                        <div id="new-profile" class="center">
+                            <iconify-icon icon="typcn:plus"></iconify-icon>
+                        </div>
+                        <input type="file" name="profile" id="new-profile-file">
+                    </div>
+                    <div class="name-email p-4">
+                        <input type="text" class="form-control my-2" placeholder="Full Name" value="Hussein Khalil">
+                        <input type="text" class="form-control my-2" placeholder="Email" value="hussein@gmail.com">
+                    </div>
+                </div>
+                <button class="btn btn-primary">Udpate</button>
+            </form>
+            <h2>Update Password</h2>
+            <form class="password">
+                <input type="password" name="old-pass" class="form-control my-2" id="old-pass" placeholder="Old Password">
+                <input type="password" name="new-pass" class="form-control my-2" id="new-pass" placeholder="New Password">
+                <button class="btn btn-primary my-2">Update</button>
+            </form>
+        </div>
     </div>
 
     <footer>
