@@ -555,12 +555,12 @@ footer iconify-icon:hover{
 /** Start About us Page **/
 .navbar-container{
     background-color: var(--tertiary);
-    height: 130px;
+    min-height: 130px;
 }
 
 @media (max-width: 768px){
     .navbar-container{
-        height: 60px;
+        min-height: 60px;
     }
 }
 
@@ -609,3 +609,21 @@ footer iconify-icon:hover{
 }
 
 /** End Edit Profile Page **/
+
+
+/** Start Favorites Page **/
+
+
+.saved-post{
+    border: 1px solid var(--primary);
+    margin: 10px;
+    padding: 10px;
+}
+
+.saved-post img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/** End Favorites Page **/
