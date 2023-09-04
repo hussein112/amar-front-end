@@ -85,6 +85,7 @@ a{
     position: absolute;
     text-align: center;
     width: 100%;
+    top: 0;
     height: 100%;
     z-index: 1111;
     display: none;
@@ -382,31 +383,43 @@ footer iconify-icon:hover{
 /** Start News Feed Page **/
 
 .page{
-    margin-top: 150px;
+    margin-top: 130px;
+    display: flex;
 }
 
-@media (max-width: 768px){
+.page aside .sidebar{
+    position: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px){
     .page{
         margin-top: 60px;
     }
 }
 
 .posts{
-    text-align: center;
+    margin-top: 5%;
 }
 
 .post{
-    display: inline-block;
-    width: 500px;
+    width: 800px;
     height: 600px;
     border: 1px solid var(--primary);
     border-radius: 10px;
+    margin: 10px auto;
 }
 
+@media (max-width: 992px){
+    .post{
+        width: 500px;
+    }
+}
 @media (max-width: 576px){
     .post{
         width: 350px;
-        height: 600px;
     }
 }
 
@@ -420,7 +433,6 @@ footer iconify-icon:hover{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    text-align: left;
     flex: 1;
 }
 
@@ -446,15 +458,36 @@ footer iconify-icon:hover{
     padding: 5px;
 }
 
-.page{
-    display: flex;
+
+.post .actions{
+    padding: 0 5px;
 }
 
-.page aside{
-    background: red;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+.post .add-to-favorites{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.sidebar .sidebar-list-item{
+    padding: 15px 0;
+    transition: .3s;
+}
+
+.sidebar .sidebar-item{
+    display: block;
+}
+
+.sidebar .sidebar-item iconify-icon{
+    font-size: 30px;
+}
+
+.sidebar .sidebar-item:hover{
+    background-color: var(--primary);
+}
+
+.sidebar .sidebar-active{
+    background-color: var(--tertiary);
 }
 /** End News Feed Page **/
 
@@ -522,6 +555,13 @@ footer iconify-icon:hover{
 /** Start About us Page **/
 .navbar-container{
     background-color: var(--tertiary);
+    height: 130px;
+}
+
+@media (max-width: 768px){
+    .navbar-container{
+        height: 60px;
+    }
 }
 
 /** End About Us Page **/

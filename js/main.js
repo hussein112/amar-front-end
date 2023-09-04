@@ -1,3 +1,8 @@
+// Enable Bootstrap Tooltips
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 // Full Page Search
 
 const searchBox = document.getElementById("search-box");
