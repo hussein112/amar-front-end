@@ -631,3 +631,39 @@ footer iconify-icon:hover{
 }
 
 /** End Favorites Page **/
+
+/** Start New Post Page **/
+.post-type{
+    text-align: center;
+    border: 1px solid var(--primary);
+    padding: 15px 0;
+    margin: 5px;
+}
+.post-type iconify-icon{
+    font-size: 50px;
+}
+
+#post-type a{
+    cursor: pointer;
+    color: var(--tertiary);
+}
+
+.active-post-type{
+    background: var(--primary);
+}
+
+.post-type-visible{
+    display: block !important;
+}
+
+#resource-post,
+#placement-post{
+    display: none;
+}
+
+#upload-images iconify-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/** End New Post Page **/
